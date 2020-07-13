@@ -3,10 +3,11 @@
 
 def checkArmstrong(num):
     # Your code goes here
-    l = len(str(num))
+    n = str(num)
+    l = len(n)
     t = num
     sum = 0
-    for i in range(0, l):
+    while True:
         a = t % 10
         sum = sum + (a ** l)
         t = t / 10
