@@ -7,10 +7,10 @@ def checkArmstrong(num):
     l = len(n)
     t = num
     sum = 0
-    while True:
+    for i in range(0, l):
         a = t % 10
         sum = sum + (a ** l)
-        t = t / 10
+        t = t // 10
     if sum == num:
         return True
     else:
