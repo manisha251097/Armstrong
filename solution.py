@@ -3,5 +3,13 @@
 
 def checkArmstrong(num):
         # Your code goes here
-
-       return True
+        l=len(num)
+        t = num
+        sum=0
+        a = t % 10
+        sum = sum + (a ** l)
+        t = t / 10
+        if sum == num:
+                return True
+        else:
+                return False
