@@ -5,8 +5,9 @@ def checkArmstrong(num):
     # Your code goes here
     l = len(str(num))
     t = num
+
+    sum = 0
     for i in range(0, l):
-        sum = 0
         a = t % 10
         sum = sum + (a ** l)
         t = t / 10
